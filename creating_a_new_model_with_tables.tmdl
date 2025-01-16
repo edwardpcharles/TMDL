@@ -1,0 +1,28 @@
+createOrReplace
+	model Model
+		culture: en-US
+		defaultPowerBIDataSourceVersion: powerBI_V3
+
+		table '__ KPIS'
+
+			measure 'Place Holder Measure' = ""
+
+			partition Metrics = m
+				mode: import
+				source =
+					let
+						Source = #table({}, {})
+					in
+						Source
+		
+		table '__ UI Measures'
+
+			measure 'UI Place Holder Measure' = ""
+
+			partition Metrics = m
+				mode: import
+				source =
+					let
+						Source = #table({}, {})
+					in
+						Source
