@@ -1,0 +1,8 @@
+createOrReplace
+	perspective analyze_in_excel_projects
+		perspectiveTable 'Product Table'
+			perspectiveColumn 'Admin / Design Cost'
+		perspectiveTable 'Metrics'
+			perspectiveMeasure 'COGs'
+		perspectiveTable 'Warehouse Fact Table'
+			perspectiveHierarchy 'QTY on Hand Hierarchy'
